@@ -416,6 +416,21 @@
             </li>
           </ul>
         </div>
+        <!-- Subscribe -->
+        <div class="form">
+          <p class="social">Subscribe</p>
+          <form name="subscribe" autocomplete="on" method="post">
+            <label>
+              <input class="form-footer-text" type="email" name="user_email" placeholder="E-mail" />
+            </label>
+            <button type="submit" class="button-form">
+              <p class="button-form-title">Subscribe</p>
+              <svg class="icon-form-footer" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- Modal window -->
@@ -426,6 +441,59 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
+        <form class="modal-form">
+          <strong class="form-header">Leave your contacts and we will call you back</strong>
+          <ul class="form-list list">
+            <li class="form-list-element">
+              <label class="label-name">
+                Name
+                <input class="label-input-name label-input" type="name" name="name" />
+                <svg class="svg-person" width="18" height="24">
+                  <use href="./images/icons.svg#name"></use>
+                </svg>
+              </label>
+            </li>
+            <li class="form-list-element">
+              <label class="label-tel">
+                Phone
+                <input class="label-input-tel label-input" type="tel" name="tel" />
+                <svg class="svg-phone" width="18" height="24">
+                  <use href="./images/icons.svg#phone"></use>
+                </svg>
+              </label>
+            </li>
+            <li class="form-list-element">
+              <label class="label-email">
+                Email
+                <input class="label-input-email label-input" type="email" name="email" />
+                <svg class="svg-email" width="18" height="24">
+                  <use href="./images/icons.svg#email"></use>
+                </svg>
+              </label>
+            </li>
+            <li class="form-list-element">
+              <label class="label-comment">
+                Comment
+                <input
+                  class="label-input-comment label-input"
+                  type="text"
+                  name="comment"
+                  placeholder="Text input"
+                />
+              </label>
+            </li>
+            <li class="form-list-element">
+              <label class="label-accept">
+                <input class="label-input-privacy" type="checkbox" />
+                <span class="label-span">
+                  I accept the terms and conditions of the
+                  <a class="link-privacy" href="">Privacy Policy</a>
+                </span>
+                <button class="modal-sub-send" type="submit">Send</button>
+              </label>
+            </li>
+          </ul>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
